@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+    <body>
+        <%- include('./partials/titleLink.ejs') %>
+        <div id="mainDiv">
+            <section id="wrapper" >
+                <div id="div-one" >
+                    <a href="/login">
+                        <button type="submit" class="regisBtn">
+                            Login
+                        </button>
+                    </a>
+                    </button>
+                    <a href="/register">
+                        <button
+                            type="button"
+                            class="btn btn-secondary btn-lg btn-block"
+                        >
+                            Register
+                        </button>
+                    </a>
+                </div>
+
+                <div id="div-two">
+                    <a href="/testGPT">
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-lg btn-block"
+                        >
+                            Test GPT
+                        </button>
+                    </a>
+                    <a href="/documentation">
+                    <button
+                        type="button"
+                        class="btn btn-primary btn-lg btn-block"
+                    >
+                        -API-
+                    </button>
+                </a>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

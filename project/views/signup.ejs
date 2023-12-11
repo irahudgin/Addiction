@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+    <body>
+        <%- include('./partials/titleLink.ejs') %>
+        <div style=" position: fixed;top: 20px; right: 20px;">
+            <a href="/">
+                <button type="button"  style="background-color: transparent;border: none;color: #000; font-size: 20px;cursor: pointer;">Home</button>
+            </a>
+        </div>
+        <div
+            class="container d-flex align-items-center justify-content-center"
+            style="height: 100vh"
+        >
+            <form class="col-md-6">
+                <h4 class="text-center form-title">Sign Up</h4>
+
+                <div class="form-group">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Name"
+                        name="name"
+                    />
+                </div>
+                <div class="form-group">
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Email"
+                        name="email"
+                    />
+                </div>
+                <div class="form-group">
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="pwd"
+                        placeholder="Password"
+                        name="pwd"
+                    />
+                </div>
+                <div class="form-group">
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="confirmpwd"
+                        placeholder="Confirm password"
+                        name="confirmpwd"
+                    />
+                </div>
+                <button id="registerBtn" type="submit" class="mx-auto d-block">
+                    Register
+                </button>
+            </form>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

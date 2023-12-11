@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+        .endpoint {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div style=" position: fixed;top: 20px; right: 20px;">
+        <a href="/">
+            <button type="button"  style="background-color: transparent;border: none;color: #000; font-size: 20px;cursor: pointer;">Home</button>
+        </a>
+    </div>
+    <div class="container">
+        <h1>Stories API Documentation</h1>
+        <h2>Base URL</h2>
+        <pre>http://100.26.46.220/api/stories</pre>
+
+        <div class="endpoint">
+            <h2>List All Stories</h2>
+            <pre>GET /api/stories/</pre>
+            <p>Retrieve a list of all stories.</p>
+        </div>
+
+        <div class="endpoint">
+            <h2>Get Stories by Genre</h2>
+            <pre>GET /api/stories/?genre=&lt;genre&gt;</pre>
+            <p>Retrieve a list of stories filtered by genre.</p>
+        </div>
+
+        <div class="endpoint">
+            <h2>Get Stories by Difficulty</h2>
+            <pre>GET /api/stories/?difficulty=&lt;difficulty&gt;</pre>
+            <p>Retrieve a list of stories filtered by difficulty.</p>
+        </div>
+
+        <div class="endpoint">
+            <h2>Get Stories by Genre and Difficulty</h2>
+            <pre>GET /api/stories/?genre=&lt;genre&gt;&amp;difficulty=&lt;difficulty&gt;</pre>
+            <p>Retrieve a list of stories filtered by both genre and difficulty.</p>
+        </div>
+
+        <div class="endpoint">
+            <h2>Get a Single Story by ID</h2>
+            <pre>GET /api/stories/?id=&lt;id&gt;</pre>
+            <p>Retrieve a single story by its ID.</p>
+        </div>
+
+        <h2>Response Structure</h2>
+        <pre>{
+    "id": Integer,
+    "title": String,
+    "genre": String,
+    "difficulty": String,
+    "content": String
+}</pre>
+
+        <h2>Status Codes</h2>
+        <p>The API will return the following status codes in its API:</p>
+        <ul>
+            <li><code>200 OK</code>: The request was successful and the response body contains the requested data.</li>
+            <li><code>400 Bad Request</code>: The request was invalid or cannot be served.</li>
+            <li><code>404 Not Found</code>: The requested resource could not be found.</li>
+            <li><code>500 Internal Server Error</code>: The server encountered an unexpected condition.</li>
+        </ul>
+    </div>
+</body>
+</html>

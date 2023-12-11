@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+    <body>
+        <%- include('./partials/titleLink.ejs') %>
+        <div style=" position: fixed;top: 20px; right: 20px;">
+            <a href="/">
+                <button type="button"  style="background-color: transparent;border: none;color: #000; font-size: 20px;cursor: pointer;">Home</button>
+            </a>
+        </div>
+        <table class="charts-css column multiple">
+
+        <tr>
+            <td style="--size: 0.2"> <span class="data"> Data </span> </td>
+            <td style="--size: 0.4"> <span class="data"> Data </span> </td>
+            <td style="--size: 0.6"> <span class="data"> Data </span> </td>
+          </tr>
+        </table>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
